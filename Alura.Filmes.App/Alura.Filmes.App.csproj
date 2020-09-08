@@ -127,15 +127,14 @@
     <Compile Include="Dados\AluraFilmesContexto.cs" />
     <Compile Include="Dados\FornecedorConfiguration.cs" />
     <Compile Include="Dados\HistoricoConfiguration.cs" />
+    <Compile Include="Dados\ITipoDocumentoDAO.cs" />
+    <Compile Include="Dados\IUsuarioDAO.cs" />
     <Compile Include="Dados\TipoDocumentoConfiguration.cs" />
+    <Compile Include="Dados\TipoDocumentoDAOEntity.cs" />
     <Compile Include="Dados\TituloConfiguration.cs" />
     <Compile Include="Dados\UsuarioConfiguration.cs" />
+    <Compile Include="Dados\UsuarioDAOEntity.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
-    <Compile Include="Migrations\20200828225127_migracao01.cs" />
-    <Compile Include="Migrations\20200828225127_migracao01.designer.cs">
-      <DependentUpon>20200828225127_migracao01.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Fornecedor.cs" />
     <Compile Include="Negocio\Historico.cs" />
     <Compile Include="Negocio\TipoDocumento.cs" />
@@ -152,6 +151,8 @@
     <Content Include="Scripts\alurafilmes-cargainicial.sql" />
     <Content Include="Scripts\alurafilmes-estrutura.sql" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

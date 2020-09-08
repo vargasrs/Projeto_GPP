@@ -38,6 +38,9 @@ namespace Alura.Filmes.App.Dados
               .HasColumnName("T001_CASENHA")
               .HasColumnType("VARCHAR(20)")
               .IsRequired();
+
+           // tirei porque nao funcionou ao incluir
+             /*
             // AULA0301 coluna que existe no BD mas não necessaria ao negocio. Conceito de Shadow Properties
             builder
             .Property<DateTime>("T001_DTSENHA")
@@ -45,6 +48,7 @@ namespace Alura.Filmes.App.Dados
             // AULA  0304 Definindo valor padrão para colunas. Atribui getdate() como default
             .HasDefaultValueSql("getdate()")
             .IsRequired();
+            */
         }
     }
 }

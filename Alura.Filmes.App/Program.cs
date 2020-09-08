@@ -61,22 +61,49 @@ namespace Alura.Filmes.App
                 }
                 */
 
-                // AULA 0405                
-                foreach (var tipodocumento in contexto.TipoDocumentos)
-                {
-                    System.Console.WriteLine(tipodocumento);
-                }
-                
+                /*
+                   // AULA 0405                
+                   foreach (var lista_titulo in contexto.Titulos)
+                   {
+                       System.Console.WriteLine(lista_titulo);
+                   }
+                */
+
+/*
+                // adicionando usuario
+                var novo_usuario = new Usuario();
+                novo_usuario.Cpf = "12345678901";
+                novo_usuario.Email = "svar@ici.cur";
+                novo_usuario.Nome = "JOSE DA SILVA";
+                novo_usuario.Senha = "leumas";
+                contexto.Usuarios.Add(novo_usuario);
+                contexto.SaveChanges();
+*/
+
+
+                // adicionar tipo documento
+                var novo_tipodoc = new TipoDocumento();
+                novo_tipodoc.Nome = "CHEQUE BANESPA";
+                novo_tipodoc.Sigla = "CHBANESPA";
+                novo_tipodoc.UsuarioId = 1;
+                contexto.TipoDocumentos.Adicionar(novo_tipodoc);
+                contexto.SaveChanges();
+
+
+/*
+                var usuario = contexto.Usuarios.First();
+                usuario.Nome = "NOME ALTERADO";
+                contexto.Usuarios.Remover(usuario);
+                contexto.SaveChanges();
+                */
 
 
 
+
+
+                System.Console.WriteLine("FINALIZADO");
+                Console.ReadLine();
             }
-
-            System.Console.WriteLine("FINALIZADO");
-               Console.ReadLine();
-
-
-
 }
 }
 }
